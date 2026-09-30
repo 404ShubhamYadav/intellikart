@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: orchestration-service
+  datasource:
+    url: jdbc:mysql://localhost:3310/orchestration_db
+    username: root
+    password: root123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  kafka:
+    bootstrap-servers: localhost:9092
+
+server:
+  port: 8084
